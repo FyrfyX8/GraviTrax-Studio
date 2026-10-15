@@ -1,2 +1,2 @@
-# GraviTrax_Studio
+# GraviTrax Studio
 Editor for GraviTrax tracks. Tracks can be documented or build and used to make building instrucions for it.
