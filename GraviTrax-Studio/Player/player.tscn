@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://sxobwhwink7j"]
+
+[ext_resource type="Script" uid="uid://d2jnew8ups7uj" path="res://Player/player.gd" id="1_l8h54"]
+
+[node name="Player" type="CharacterBody3D" unique_id=851262541 node_paths=PackedStringArray("CameraPosition", "PerspectiveCamera", "IsometricCamera")]
+motion_mode = 1
+script = ExtResource("1_l8h54")
+CameraPosition = NodePath("CameraPos")
+PerspectiveCamera = NodePath("CameraPos/PespectiveCam")
+IsometricCamera = NodePath("CameraPos/IsometricCam")
+
+[node name="CameraPos" type="Marker3D" parent="." unique_id=2028168016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="IsometricCam" type="Camera3D" parent="CameraPos" unique_id=64164590]
+visible = false
+projection = 1
+
+[node name="PespectiveCam" type="Camera3D" parent="CameraPos" unique_id=470116611]
+current = true
